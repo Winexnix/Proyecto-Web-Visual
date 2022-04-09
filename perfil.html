@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <div id="encabezado">
+            <div id="logo">
+                <h1>Tresdy</h1>
+            </div>
+            <div id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carrocompras.html">Carro de compras</a></li>
+                <li><a href="CRUD.html">Gestion de productos</a></li>
+                <li><a href="catalogo.html">Productos</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar Sesion</a></li>
+                <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModa2">Registrarse</a></li>
+                <li><a href="index.html#Contacto">Contacto</a></li>
+            </div>
+        </div>
+
+    <div id="cuadro-perfil">
+
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Cuenta</h2>
+
+
+        <div id="imagen-perfil">
+            <img src="imagenes/default_profile_avatar.svg" width="250px" alt="">
+        </div>
+        <div id="info-perfil">
+
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Direccion 2(Opcional)</label>
+                    <input type="text" class="form-control" id="inputAddress2"
+                        placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Comuna</label>
+                    <select id="inputState" class="form-select">
+                            <option selected> </option>
+                            <option>Aldea de Tulor	<option>
+                            <option> Alto El Loa	<option>
+                            <option>Antofagasta		<option>
+                            <option>Arica			<option>
+                            <option>Bahía Inglesa									<option>
+                            <option>Calama											<option>
+                            <option>Caspana											<option>
+                            <option>Cerro Toco										<option>
+                            <option>Chiu - Chiu										<option>
+                            <option>Copiapó											<option>
+                            <option>Géisers del Tatio								<option>
+                            <option>Guatín											<option>
+                            <option>Hierbas Buenas									<option>
+                            <option>Iquique											<option>
+                            <option>La Tirana										<option>
+                            <option>Laguna Cejar									<option>
+                            <option>Laguna Chaxa									<option>
+                            <option>Laguna Roja										<option>
+                            <option>Lagunas Altiplánicas (Miscanti y Miñiques)		<option>
+                            <option>Machuca											<option>
+                            <option>Monumento Natural Salar de Surire				<option>
+                            <option>Oficinas Salitreras Humberstone					<option>
+                            <option>Ojos del Salar y laguna Tebinquinche			<option>
+                            <option>Ollagüe											<option>
+                            <option>Parque Nacional Lauca							<option>
+                            <option>Parque Nacional Llanos de Challe				<option>
+                            <option>Parque Nacional Llullaillaco					<option>
+                            <option>Parque Nacional Nevado Tres Cruces				<option>
+                            <option>Parque Nacional Pan de Azúcar					<option>
+                            <option>Parque Nacional Salar de Huasco					<option>
+                            <option>Parque Nacional Volcán Isluga					<option>
+                            <option>Pukará de Lasana								<option>
+                            <option>Pukará de Quitor								<option>
+                            <option>Putre											<option>
+                            <option>Reserva Nacional Los Flamencos					<option>
+                            <option>Reserva Nacional Pampa del Tamarugal			<option>
+                            <option>Salar de Atacama								<option>
+                            <option>Salar de Tara									<option>
+                            <option>San Pedro de Atacama							<option>
+                            <option>Socaire											<option>
+                            <option>Termas de Mamiña								<option>
+                            <option>Termas de Puritama								<option>
+                            <option>Toconao											<option>
+                            <option>Valle de la Luna								<option>
+                            <option>Valle del Arcoiris								<option>
+                            <option>Volcán Láscar									<option>
+                            <option>Volcán Licancabur								<option>
+                            <option>Volcán Ojos del Salado							<option>
+                            <option>Volcán Sairecabur								<option>
+                            <option>Coquimbo										<option>
+                            <option>La Serena										<option>
+                            <option>Parque Nacional Bosques de Fray Jorge			<option>
+                            <option>Pisco Elqui										<option>
+                            <option>Reserva Nacional Pingüino de Humboldt			<option>
+                            <option>Termas de Socos									<option>
+                            <option>Tongoy											<option>
+                            <option>Valle del Elqui									<option>
+                            <option>Algarrobo										<option>
+                            <option>Alto del Naranjo								<option>
+                            <option>Baños Colina									<option>
+                            <option>Cajón del Maipo									<option>
+                            <option>Curicó											<option>
+                            <option>El Colorado										<option>
+                            <option>Farellones										<option>
+                            <option>Isla Negra										<option>
+                            <option>Isla Robinson Crusoe							<option>
+                            <option>La Parva										<option>
+                            <option>Lago Colbún										<option>
+                            <option>Lago Rapel										<option>
+                            <option>Lago Vichuquén									<option>
+                            <option>Laguna Aculeo									<option>
+                            <option>Los Andes / Portillo							<option>
+                            <option>Mall Costanera Center							<option>
+                            <option>Monumento Natural El Morado						<option>
+                            <option>Monumento Natural Isla Cachagua					<option>
+                            <option>Museo de Colchagua								<option>
+                            <option>Olmué											<option>
+                            <option>Outlet Buenaventura								<option>
+                            <option>Parque Aguas de San Ramón						<option>
+                            <option>Parque Nacional La Campana						<option>
+                            <option>Parque Nacional Radal Siete Tazas				<option>
+                            <option>Pichilemu										<option>
+                            <option>Rancagua										<option>
+                            <option>Reserva Nacional Altos del Lircay				<option>
+                            <option>Reserva Nacional Laguna Torca					<option>
+                            <option>Reserva Nacional Río Clarillo					<option>
+                            <option>Reserva Nacional Río Los Cipreses				<option>
+                            <option>San Fernando									<option>
+                            <option>Santa Cruz										<option>
+                            <option>Santiago										<option>
+                            <option>Sewell											<option>
+                            <option>Ski en Santiago									<option>
+                            <option>Talca											<option>
+                            <option>Termas de Cauquenes								<option>
+                            <option>Termas de Panimávida							<option>
+                            <option>Termas de Quinamávida							<option>
+                            <option>Termas del Flaco								<option>
+                            <option>Valle de Almahue								<option>
+                            <option>Valle de Casablanca								<option>
+                            <option>Valle de Colchagua								<option>
+                            <option>Valle del Maipo									<option>
+                            <option>Valle Nevado									<option>
+                            <option>Valparaíso										<option>
+                            <option>Viña Casa Silva									<option>
+                            <option>Viña Concha y Toro								<option>
+                            <option>Viña del Mar									<option>
+                            <option>Viña Escondida									<option>
+                            <option>Viña Lapostolle									<option>
+                            <option>Viña Matetic									<option>
+                            <option>Viña Montes										<option>
+                            <option>Viña MontGras									<option>
+                            <option>Viña Santa Cruz									<option>
+                            <option>Viña Santa Rita									<option>
+                            <option>Viña Undurraga									<option>
+                            <option>Viña Vik										<option>
+                            <option>Viña Viu Manent									<option>
+                            <option>Volcán San José									<option>
+                            <option>Yerba Loca										<option>
+                            <option>Zapallar									<option>
+                            <option>Melipilla										<option>
+                            <option>San Antonio										<option>
+                            <option>Araucanía y Los Ríos							<option>
+                            <option>Backyard Pullao									<option>
+                            <option>Chillán											<option>
+                            <option>Cochamó											<option>
+                            <option>Concepción										<option>
+                            <option>Contulmo										<option>
+                            <option>Corralco										<option>
+                            <option>Crater Raihuen									<option>
+                            <option>Curacautín										<option>
+                            <option>El Cañi											<option>
+                            <option>Fiordo Quintupeu								<option>
+                            <option>Frutillar										<option>
+                            <option>Lago Budi										<option>
+                            <option>Lago Llanquihue									<option>
+                            <option>Lago Lleu Lleu									<option>
+                            <option>Lago Ranco										<option>
+                            <option>Lago Todos los Santos							<option>
+                            <option>Lonquimay										<option>
+                            <option>Los Ángeles										<option>
+                            <option>Monumento Natural Cerro Ñielol					<option>
+                            <option>Ojos del Caburgua								<option>
+                            <option>Osorno											<option>
+                            <option>Parque Nacional Alerce Andino					<option>
+                            <option>Parque Nacional Conguillío						<option>
+                            <option>Parque Nacional Huerquehue						<option>
+                            <option>Parque Nacional Laguna del Laja					<option>
+                            <option>Parque Nacional Nahuelbuta						<option>
+                            <option>Parque Nacional Puyehue							<option>
+                            <option>Parque Nacional Tolhuaca						<option>
+                            <option>Parque Nacional Vicente Perez Rosales			<option>
+                            <option>Parque Nacional Villarrica						<option>
+                            <option>Parque Tagua-Tagua								<option>
+                            <option>Peninsula de Rilán								<option>
+                            <option>Pucón											<option>
+                            <option>Puerto Montt									<option>
+                            <option>Puerto Octay									<option>
+                            <option>Puerto Varas									<option>
+                            <option>Quinquén										<option>
+                            <option>Reserva Biologica Huilo Huilo					<option>
+                            <option>Reserva Nacional Isla Mocha						<option>
+                            <option>Reserva Nacional Malalcahuello					<option>
+                            <option>Río Puelo										<option>
+                            <option>Río Trancura									<option>
+                            <option>Salto del Laja									<option>
+                            <option>Saltos de Petrohué								<option>
+                            <option>Santuario de la Naturaleza Carlos Anwandter		<option>
+                            <option>Ski en Antillanca								<option>
+                            <option>Ski en Chillán									<option>
+                            <option>Sollipulli										<option>
+                            <option>Temuco											<option>
+                            <option>Termas de Aguas Calientes						<option>
+                            <option>Termas de Chillán								<option>
+                            <option>Termas de Coñaripe								<option>
+                            <option>Termas de Huife									<option>
+                            <option>Termas de Liquiñe								<option>
+                            <option>Termas de Puyehue								<option>
+                            <option>Termas de Tolhuaca								<option>
+                            <option>Termas Geométricas								<option>
+                            <option>Totoral											<option>
+                            <option>Trekking al Salto del Puma Anticura				<option>
+                            <option>Valdivia										<option>
+                            <option>Villarrica										<option>
+                            <option>Volcán Osorno									<option>
+                            <option>Achao											<option>
+                            <option>Ancud											<option>
+                            <option>Castro											<option>
+                            <option>Dalcahue										<option>
+                            <option>Isla de Chiloé									<option>
+                            <option>Isla Mechuque									<option>
+                            <option>Parque Nacional Chiloé							<option>
+                            <option>Parque Tantauco									<option>
+                            <option>Puñihuil										<option>
+                            <option>Archipiélago Los Chonos							<option>
+                            <option>Auchemó											<option>
+                            <option>Bahía Tic Toc									<option>
+                            <option>Caleta Tortel									<option>
+                            <option>Capillas de Mármol								<option>
+                            <option>Carretera Austral								<option>
+                            <option>Carretera Austral Norte							<option>
+                            <option>Carretera Austral Sur							<option>
+                            <option>Centro de Ski El Fraile							<option>
+                            <option>Chaitén											<option>
+                            <option>Chile Chico										<option>
+                            <option>Cochrane										<option>
+                            <option>Coyhaique										<option>
+                            <option>Fiordo Piti Palena								<option>
+                            <option>Fiordo Quitralco								<option>
+                            <option>Futaleufú										<option>
+                            <option>Glaciar Exploradores							<option>
+                            <option>Glaciar O'Higgins								<option>
+                            <option>Isla de los Muertos								<option>
+                            <option>La Junta										<option>
+                            <option>Lago Elizalde									<option>
+                            <option>Lago General Carrera							<option>
+                            <option>Laguna Verde									<option>
+                            <option>Parque Aikén del Sur							<option>
+                            <option>Parque Nacional Hornopirén						<option>
+                            <option>Parque Nacional Laguna San Rafael				<option>
+                            <option>Parque Nacional Queulat							<option>
+                            <option>Parque Patagonia								<option>
+                            <option>Parque Pumalin									<option>
+                            <option>Puerto Aguirre									<option>
+                            <option>Puerto Bertrand									<option>
+                            <option>Puerto Chacabuco								<option>
+                            <option>Puerto Escondido								<option>
+                            <option>Puerto Guadal									<option>
+                            <option>Puerto Murta									<option>
+                            <option>Puyuhuapi										<option>
+                            <option>Reserva Nacional Cerro Castillo					<option>
+                            <option>Reserva Nacional Lago Jeinimeni					<option>
+                            <option>Reserva Nacional Rio Simpson					<option>
+                            <option>Reserva Nacional Tamango						<option>
+                            <option>Río Baker										<option>
+                            <option>Termas de Puyuhuapi								<option>
+                            <option>Termas del Amarillo								<option>
+                            <option>Villa O'Higgins									<option>
+                            <option>Antártica										<option>
+                            <option>Avenida de los Glaciares						<option>
+                            <option>Bahía Ainsworth									<option>
+                            <option>Bahía Wulaia									<option>
+                            <option>Cabo de Hornos									<option>
+                            <option>Camping Vértice Los Perros						<option>
+                            <option>Estancia Mercedes								<option>
+                            <option>Glaciar Amalia                                  <option>
+                            <option>Glaciar Bernal                    				<option>
+                            <option>Glaciar Grey									<option>
+                            <option>Glaciar Serrano y glaciar Balmaceda             <option>
+                            <option>Isla Magdalena		               				<option>
+                            <option>Isla Navarino		               				<option>
+                            <option>Lago Pehoé			               				<option>
+                            <option>Mirador Base Torres								<option>
+                            <option>Monumento Natural Cueva del Milodón				<option>
+                            <option>Parque Nacional Alberto de Agostini				<option>
+                            <option>Parque Nacional Pali Aike						<option>
+                            <option>Parque Nacional Torres del Paine				<option>
+                            <option>Porvenir										<option>
+                            <option>Puerto Natales									<option>
+                            <option>Puerto Williams									<option>
+                            <option>Punta Arenas									<option>
+                            <option>Refugio El Chileno								<option>
+                            <option>Refugio Vértice Dickson							<option>
+                            <option>Refugio Vértice Grey							<option>
+                            <option>Refugio Vértice Paine Grande					<option>
+                            <option>Reserva Nacional Magallanes						<option>
+                            <option>Sector Los Cuernos								<option>
+                            <option>Tierra del Fuego								<option>
+                            <option>Valle Francés									<option>
+                            <option>Ahu Akivi										<option>
+                            <option>Ahu Tahai										<option>
+                            <option>Aku Akahanga									<option>
+                            <option>Cerro El Yunque									<option>
+                            <option>Hanga OTeo										<option>
+                            <option>Hotu iti										<option>
+                            <option>Isla de Pascua									<option>
+                            <option>Mahatua											<option>
+                            <option>Maunga Terevaka									<option>
+                            <option>Mike Rapu - Buceo Isla de Pascua				<option>
+                            <option>Mirador Selkirk									<option>
+                            <option>Orongo											<option>
+                            <option>Ovahe											<option>
+                            <option>Parque Nacional Archipiélago Juan Fernández		<option>
+                            <option>Parque Nacional Rapa Nui						<option>
+                            <option>Playa Anakena									<option>
+                            <option>Poike											<option>
+                            <option>Poike											<option>
+                            <option>Pueblo San Juan Bautista						<option>
+                            <option>Puerto Inglés									<option>
+                            <option>Puna Pau										<option>
+                            <option>Rohoi											<option>
+                            <option>Tongariki                                       <option>
+                            <option>Volcán Rano Kau                                 <option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Codigo Postal</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-dark">Actualizar Informacion</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="Subscribsion">
+        <div id="titulosub">
+        <h1>Subscribirse a fundacion ayuda animales</h1>
+        </div> 
+        <div id="switch"> 
+            <h3>Noㅤ</h3>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        </div>
+        <h3>ㅤSi</h3>
+    </div>
+    </div>
+
+    <div id="login">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header" style="background-color: black; border-width: 0px;">
+                        <h5 class="modal-title" id="exampleModalLabel">Iniciar sesion</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="background-color: black;">
+                        <form>
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form2Example1">Correo electronico</label>
+                                <input type="email" id="form2Example1" class="form-control" />
+                            </div>
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form2Example2">Contraseña</label>
+                                <input type="password" id="form2Example2" class="form-control" />
+                            </div>
+
+                            <!-- 2 column grid layout for inline styling -->
+                            <div class="row mb-4">
+                                <div class="col d-flex justify-content-center">
+                                    <!-- Checkbox -->
+                                </div>
+
+                                <div id="col">
+                                    <!-- Simple link -->
+                                    <a href="#!">Olvidaste tu Contraseña?</a>
+                                </div>
+                            </div>
+
+                            <div id="biniciar">
+                                <a href="" data-bs-dismiss="modal">Iniciar Sesion</a>
+                            </div>
+                            <!-- Register buttons -->
+                            <div class="text-center">
+                                <p>No estas registrado? <a href="#!" data-bs-dismiss="modal" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModa2">Registrate</a></p>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div id=ibajo>
+                        <a href="" data-bs-dismiss="modal">Cerrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="registrarse">
+        <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header" style="background-color: black; border-width: 0px;">
+                        <h5 class="modal-title" id="exampleModalLabel">Registrarse</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="background-color: black;">
+                        <form>
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form2Example1">Correo electronico</label>
+                                <input type="email" id="form2Example1" class="form-control" />
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form2Example2">Contraseña</label>
+                                <input type="password" id="form2Example2" class="form-control" />
+                            </div>
+
+                            <!-- 2 column grid layout for inline styling -->
+                            <div class="row mb-4">
+                                <div class="col d-flex justify-content-center">
+                                    <!-- Checkbox -->
+                                </div>
+
+                                <div id="col2">
+                                    <!-- Simple link -->
+                                    <a href="#!"></a>
+                                </div>
+                            </div>
+
+                            <div id="biniciar2">
+                                <a href="" data-bs-dismiss="modal">Registrarse</a>
+                            </div>
+                            <!-- Register buttons -->
+                            <div class="text-center">
+
+
+                            </div>
+                        </form>
+                    </div>
+                    <div id=ibajo2>
+                        <a href="#" data-bs-dismiss="modal">Cerrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
